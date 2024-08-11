@@ -4,6 +4,6 @@
     ./bufferline.nix 
     ./colorscheme.nix
     ./viAlias.nix
-    ./otps.nix
+    ./opts.nix
     ];
 }
