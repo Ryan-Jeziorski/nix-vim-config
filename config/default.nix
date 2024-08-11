@@ -3,5 +3,6 @@
   imports = [ 
     ./bufferline.nix 
     ./colorscheme.nix
+    ./viAlias.nix
     ];
 }
