@@ -38,6 +38,9 @@
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
 
+	  legacyPackages = { 
+	    nixvim = nvim;
+	  };
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;
