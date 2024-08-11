@@ -1,5 +1,5 @@
 {
- opts = {
+ vim.opts = {
    number = true;
    relativenumber = true;
 
