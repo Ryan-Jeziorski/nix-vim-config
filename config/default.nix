@@ -5,5 +5,6 @@
     ./colorscheme.nix
     ./viAlias.nix
     ./opts.nix
+    ./which-key.nix
     ];
 }
