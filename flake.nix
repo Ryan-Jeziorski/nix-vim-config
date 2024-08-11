@@ -1,6 +1,8 @@
 {
   description = "A nixvim configuration";
 
+  nixConfig.bash-prompt = "\n\\[\\033[$PROMPT_COLOR\\](nix-dev)[\\[\\e]0;\\u@\\h: \\w\\a\\]\\u@\\h:\\w]\\$\\[\\033[0m\\] ";
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
