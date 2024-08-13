@@ -49,7 +49,10 @@
           };
 	  devShells = {
 	    default = pkgs.mkShell {
-	    buildInputs = [nvim];
+              buildInputs = [
+                nvim
+                pkgs.nerdfonts
+              ];
 	    };
 	  };
         };
