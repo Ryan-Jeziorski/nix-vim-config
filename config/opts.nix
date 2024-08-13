@@ -3,9 +3,11 @@
    number = true;
    relativenumber = true;
 
+   autoindent = true;
+   expandtab = true;
    shiftwidth = 2;
    smarttab = true;
-   expandtab = true;
+   smartindent = true;
 
    tabstop = 8;
    softtabstop =0;
