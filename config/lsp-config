@@ -1,0 +1,12 @@
+{
+  plugins = { 
+    lsp = {
+      enable = true;
+      servers = {
+        nixd.enable = true;
+        nixd.autostart = true;
+      };
+    };
+    rust-tools.enable = true;
+  };
+}
