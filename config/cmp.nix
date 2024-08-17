@@ -4,7 +4,6 @@
     cmp-buffer = { enable = true; };
     cmp-nvim-lsp = {enable = true; };
     cmp-path = {enable = true; };
-    #cmp-nerdfont = {enable = true; };
     cmp_luasnip = { enable = true; };
 
 
