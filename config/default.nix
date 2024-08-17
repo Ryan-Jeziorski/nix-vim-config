@@ -6,6 +6,6 @@
     ./viAlias.nix
     ./opts.nix
     ./which-key.nix
-    ./lsp-config
+    ./lsp-config.nix
     ];
 }
