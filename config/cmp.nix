@@ -102,20 +102,20 @@
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";
           "<S-Tab>" = "cmp.mapping.close()";
-          "<Tab>" =
+          #"<Tab>" =
             # lua 
-            ''
-              function(fallback)
-                local line = vim.api.nvim_get_current_line()
-                if line:match("^%s*$") then
-                  fallback()
-                elseif cmp.visible() then
-                  cmp.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
-                else
-                  fallback()
-                end
-              end
-            '';
+            #''
+              #function(fallback)
+                #local line = vim.api.nvim_get_current_line()
+                #if line:match("^%s*$") then
+                  #fallback()
+                #elseif cmp.visible() then
+                  #cmp.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })
+                #else
+                  #fallback()
+                #end
+              #end
+            #'';
              "<Down>" =
             # lua
             ''
