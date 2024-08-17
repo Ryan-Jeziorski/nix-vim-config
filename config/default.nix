@@ -8,5 +8,6 @@
     ./which-key.nix
     ./lsp/default.nix
     ./cmp.nix
+    ./lightline.nix
     ];
 }
