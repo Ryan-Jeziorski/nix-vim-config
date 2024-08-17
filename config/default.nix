@@ -9,5 +9,6 @@
     ./lsp/default.nix
     ./cmp.nix
     ./lightline.nix
+    ./nvim-tree.nix
     ];
 }
