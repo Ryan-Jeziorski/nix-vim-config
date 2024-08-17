@@ -10,5 +10,6 @@
     ./cmp.nix
     ./lightline.nix
     ./nvim-tree.nix
+    ./keymaps.nix
     ];
 }
