@@ -5,7 +5,11 @@
     openOnSetupFile = true;
     autoReloadOnWrite = true;
     view = {
-      side = "right";
+      #side = "right";
+      float = {
+        enable = true;
+        quitOnFocusLoss = true;
+      };
     };
   };
 }

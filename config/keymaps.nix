@@ -2,7 +2,7 @@
   globals.mapleader = " ";
   keymaps = [
     {
-      key = "<leader>f>";
+      key = "<leader>f";
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
     }
