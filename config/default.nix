@@ -7,5 +7,6 @@
     ./opts.nix
     ./which-key.nix
     ./lsp/default.nix
+    ./cmp.nix
     ];
 }
