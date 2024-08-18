@@ -22,6 +22,7 @@ end)
     };
     view = {
       #side = "right";
+      centralizeSelection = true;
       float = {
         enable = true;
         quitOnFocusLoss = true;
