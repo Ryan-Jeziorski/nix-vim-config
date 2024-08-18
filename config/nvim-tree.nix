@@ -4,6 +4,22 @@
     enable = true;
     openOnSetupFile = true;
     autoReloadOnWrite = true;
+
+# Raw lua code here
+# Runs on attach to the floating buffer
+# Allows us to use escape key to close the floating window
+# as well as q
+    onAttach = {
+      __raw = ''
+vim.keymap.set('n', '<Esc>', function()
+  if vim.api.nvim_win_get_config(0).relative ~= "" then
+    vim.cmd.wincmd('c')
+  else
+    vim.cmd.normal("\\<Esc>")
+  end
+end)
+      '';
+    };
     view = {
       #side = "right";
       float = {
