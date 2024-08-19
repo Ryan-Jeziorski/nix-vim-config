@@ -6,5 +6,10 @@
     ./viAlias.nix
     ./opts.nix
     ./which-key.nix
+    ./lsp/default.nix
+    ./cmp.nix
+    ./lightline.nix
+    ./nvim-tree.nix
+    ./keymaps.nix
     ];
 }
