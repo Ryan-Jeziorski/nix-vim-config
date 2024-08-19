@@ -8,20 +8,27 @@
 # Raw lua code here
 # Runs on attach to the floating buffer
 # Allows us to use escape key to close the floating window
-# as well as q
+# as well as any other onAttach custom bindings
     onAttach = {
       __raw = ''
-vim.keymap.set('n', '<Esc>', function()
-  if vim.api.nvim_win_get_config(0).relative ~= "" then
-    vim.cmd.wincmd('c')
-  else
-    vim.cmd.normal("\\<Esc>")
+  function(bufnr)
+    local api = require "nvim-tree.api"
+
+    local function opts(desc)
+      return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+    end
+
+    -- default mappings
+    api.config.mappings.default_on_attach(bufnr)
+
+    -- custom mappings
+    vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
+    vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
+    vim.keymap.set('n', '<Esc>', api.tree.close,                        opts('close'))
   end
-end)
       '';
     };
     view = {
-      #side = "right";
       centralizeSelection = true;
       float = {
         enable = true;
