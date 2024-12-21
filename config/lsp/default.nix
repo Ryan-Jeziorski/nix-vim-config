@@ -18,8 +18,8 @@
       };
     };
 
-    # enable rust-tools
-    #rust-tools.enable = true;
+    # enable rustaceanvim
+    # todo: should probably move this to it's own file
     rustaceanvim.enable = true;
 
     # LSP status information
