@@ -1,5 +1,8 @@
 {
-# Sidebar file explorere
+# webdev icons, needed for nvim-tree
+  plugins.web-devicons.enable = true;
+
+  # Sidebar file explorere
   plugins.nvim-tree = {
     enable = true;
     openOnSetupFile = true;
