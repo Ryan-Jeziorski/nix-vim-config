@@ -24,12 +24,12 @@
 
     # LSP status information
     fidget = {
-    enable = true;
-    progress = {
-      suppressOnInsert = true;
-      ignoreDoneAlready = true;
-      pollRate = 0.5;
+      enable = true;
+      progress = {
+        suppressOnInsert = true;
+        ignoreDoneAlready = true;
+        pollRate = 0.5;
+      };
     };
-  };
   };
 }
