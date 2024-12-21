@@ -19,7 +19,8 @@
     };
 
     # enable rust-tools
-    rust-tools.enable = true;
+    #rust-tools.enable = true;
+    rustaceanvim.enable = true;
 
     # LSP status information
     fidget = {
