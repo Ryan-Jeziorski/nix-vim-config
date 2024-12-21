@@ -54,7 +54,6 @@
 	    default = pkgs.mkShell {
               buildInputs = [
                 nvim
-                pkgs.nerdfonts
               ];
 	    };
 	  };
